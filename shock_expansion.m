@@ -1,11 +1,11 @@
 c = 29979245800;
-Estart = 10^52;
-ni = 10^(-2); %change!
-mp = 1.67262192*10^(-24);
+Estart = 1e52;
+ni = 1e-2); %change!
+mp = 1.67262192*1e-24);
 T3 = 17*Estart/(8*pi*ni*mp*c^2);
-Gamma0 = 10^6;
+Gamma0 = 1e6;
 Gammaf = 20;
-interval = 10^8;
+interval = 1e8;
 
 
 t0 = nthroot(T3/(c^3*Gamma0^2), 3);
@@ -33,16 +33,16 @@ Estart = 10^52;
 ni = 10^(-2);
 mp = 1.67262192*10^(-24);
 T3 = 17*Estart/(8*pi*ni*mp*c^2);
-dRdt = sqrt((T3-R^3)*c^2/T3);
+dRdt = sqrt((T3-R.^3).*c^2./T3);
 end
 
 function [radius, is_terminal, direction] = eventFunction(t, R)
 c = 29979245800;
-Estart = 10^52;
-ni = 10^(-2);
-mp = 1.67262192*10^(-24);
+Estart = 1e52;
+ni = 1e-2);
+mp = 1.67262192*1e-24);
 T3 = 17*Estart/(8*pi*ni*mp*c^2);
-radius = sqrt(T3/R^3) - 20
+radius = sqrt(T3./(R.^3)) - 20
 is_terminal = 1;
 direction = 0;
 end
